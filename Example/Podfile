@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Cmall_iOS_SDK_Example' do
+  pod 'Cmall_iOS_SDK', :path => '../'
+
+  target 'Cmall_iOS_SDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
