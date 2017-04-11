@@ -14,6 +14,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [CmallSDK startWithClientId:@"d83fcd1f-2ad8-41b5-981d-3342548c768e" clientSecret:@"0927150e-64fd-4191-85c2-b9b5c34d5a17"];
+    
+    // 开启SDK的日志打印
+    [CmallSDK setLogEnabled:true];
+    
+    // 添加SDK内部定制界面的自定义字体方式
+    NSArray *filePaths = @[@"BrushScriptStd.ttf",@"Daniel.otf"];
+    NSMutableArray *paths = [NSMutableArray arrayWithCapacity:filePaths.count];
+    for (NSString *filePath in filePaths) {
+        NSString *fontFilePath = [[NSBundle mainBundle] pathForResource:filePath ofType:nil];
+        [paths addObject:fontFilePath];
+    }
+    if (paths) {
+        [CmallSDK registerFontWithFilePaths:[paths copy]];
+    }
+    
     return YES;
 }
 
