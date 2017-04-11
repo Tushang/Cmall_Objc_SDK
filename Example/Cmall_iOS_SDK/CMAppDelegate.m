@@ -7,12 +7,13 @@
 //
 
 #import "CMAppDelegate.h"
+#import <CmallSDK/CmallSDK.h>
 
 @implementation CMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [CmallSDK startWithClientId:@"d83fcd1f-2ad8-41b5-981d-3342548c768e" clientSecret:@"0927150e-64fd-4191-85c2-b9b5c34d5a17"];
     return YES;
 }
 
