@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Cmall_iOS_SDK'
-  s.version          = '0.0.1'
+  s.version          = '2.0.0'
   s.summary          = 'Cmall iOS SDK'
 
 # This description is used to generate tags and improve search results.

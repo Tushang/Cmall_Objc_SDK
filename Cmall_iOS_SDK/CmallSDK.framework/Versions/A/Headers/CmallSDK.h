@@ -5,6 +5,9 @@
 //  Created by Moyun on 2017/3/24.
 //
 //  Copyright (c) 2017 Cmall. All rights reserved.
+//  ----------------------------------------------
+//  -------------current Version : 2.0.0----------
+//  ----------------------------------------------
 
 #import <UIKit/UIKit.h>
 
@@ -130,6 +133,7 @@
          }
  */
 + (void)registerFontWithFilePaths:(NSArray<NSString*>*_Nonnull)paths;
+
 
 
 @end

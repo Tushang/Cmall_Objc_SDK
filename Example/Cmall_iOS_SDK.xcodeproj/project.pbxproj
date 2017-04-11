@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B68732DA34019E9BBC4050D /* Pods_Cmall_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15AD1EDB640C5AE239D143C /* Pods_Cmall_iOS_SDK_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		9B0C690DD2870FFAB22CA066 /* Pods_Cmall_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15AD1EDB640C5AE239D143C /* Pods_Cmall_iOS_SDK_Example.framework */; };
 		A8DC8CC0BEA57CF9E39A277E /* Pods_Cmall_iOS_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60447B4136C495683CDCE445 /* Pods_Cmall_iOS_SDK_Tests.framework */; };
 		C8FFACD41E9CB41000B86EDB /* BrushScriptStd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8FFACD21E9CB41000B86EDB /* BrushScriptStd.ttf */; };
 		C8FFACD51E9CB41000B86EDB /* Daniel.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8FFACD31E9CB41000B86EDB /* Daniel.otf */; };
@@ -81,7 +81,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				9B0C690DD2870FFAB22CA066 /* Pods_Cmall_iOS_SDK_Example.framework in Frameworks */,
+				2B68732DA34019E9BBC4050D /* Pods_Cmall_iOS_SDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,9 +539,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cmall_iOS_SDK/Cmall_iOS_SDK-Prefix.pch";
 				INFOPLIST_FILE = "Cmall_iOS_SDK/Cmall_iOS_SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmall.cmallsdkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -555,9 +557,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cmall_iOS_SDK/Cmall_iOS_SDK-Prefix.pch";
 				INFOPLIST_FILE = "Cmall_iOS_SDK/Cmall_iOS_SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmall.cmallsdkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

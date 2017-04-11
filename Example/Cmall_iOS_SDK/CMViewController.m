@@ -8,7 +8,6 @@
 
 #import "CMViewController.h"
 #import <CmallSDK/CmallSDK.h>
-
 @interface CMViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextView *outputDataText;
@@ -20,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"Splash.png"].CGImage);
+    
     /*
      [CmallSDK showWithUserDefined:^(NSInteger code, NSString *infoDes) {
      NSLog(@"要开始转菊花了");
@@ -38,7 +39,7 @@
         NSLog(@"====%@====",modelJson);
         NSLog(@"====给第三方的editface====");
         NSLog(@"====%@====",editFace);
-        NSString *message = [NSString stringWithFormat:@"我买了这个定制,下面是SDK吐出的信息\n uploadDict：%@\nmodelJson：%@\neditFace:%@",uploadDict,modelJson,editFace];
+        NSString *message = [NSString stringWithFormat:@"我买了这个定制,下面是SDK回调信息\n uploadDict：%@\nmodelJson：%@\neditFace:%@",uploadDict,modelJson,editFace];
         
         weakSelf.outputDataText.text = message;
     }];
