@@ -1,6 +1,6 @@
 {
   "name": "Cmall_iOS_SDK",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "summary": "Cmall iOS SDK",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Tushang/Cmall_Objc_SDK",
@@ -12,8 +12,8 @@
     "Moyun": "moyunmo@hotmail.com"
   },
   "source": {
-    "git": "https://github.com/momo605654602@gmail.com/Cmall_iOS_SDK.git",
-    "tag": "0.0.2"
+    "git": "https://github.com/Tushang/Cmall_Objc_SDK.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"

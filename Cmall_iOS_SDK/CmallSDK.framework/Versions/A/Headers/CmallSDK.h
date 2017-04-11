@@ -34,7 +34,6 @@
 
 /** 设置是否打印log信息, 默认NO(不打印log).
  @param value 设置为YES,会输出log信息可供调试参考,建议在发布的时候改为No
- @return void.
  */
 + (void)setLogEnabled:(BOOL)value;
 
@@ -48,9 +47,9 @@
 + (void)setImagePrefix:(NSString*_Nonnull)prefix;
 
 /**
- 进入SDK前必须调用该方法，否则将会使用 【测试】 图片体验流程。
+ 进入SDK前必须调用该方法。
 
- @param imageUrl 图片Url,未加前缀的url将会拼接图片前缀 ImagePrefix
+ @param imageUrl 图片Url,未加前缀的url将会拼接图片前缀 prefix
             传入的图片URL必须要有跨域标识.如：
                  Access-Control-Allow-Headers:X-Requested-With
                  Access-Control-Allow-Methods:GET,POST,OPTIONS
@@ -89,7 +88,7 @@
                  ]
              }
          modelJson：你下单时需要用的modelJson字段的值，详见开放平台上的下单接口。
-         editFace：第三方忽略次字段。
+         editFace：第三方请忽略此字段。
  */
 + (void)setBuyNowCallBack:(void (^_Nullable)(NSDictionary* _Nonnull uploadImages,NSString* _Nonnull modelJson, NSString * _Nullable editFace))callBack;
 
