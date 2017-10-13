@@ -2,33 +2,17 @@
 //  CMAppDelegate.m
 //  Cmall_iOS_SDK
 //
-//  Created by momo605654602@gmail.com on 04/10/2017.
-//  Copyright (c) 2017 momo605654602@gmail.com. All rights reserved.
+//  Created by moyun on 04/10/2017.
+//  Copyright (c) 2017 Cmall. All rights reserved.
 //
 
 #import "CMAppDelegate.h"
-#import <CmallSDK/CmallSDK.h>
 
 @implementation CMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [CmallSDK startWithClientId:@"d83fcd1f-2ad8-41b5-981d-3342548c768e" clientSecret:@"0927150e-64fd-4191-85c2-b9b5c34d5a17"];
-    
-    // 开启SDK的日志打印
-    [CmallSDK setLogEnabled:true];
-    
-    // 添加SDK内部定制界面的自定义字体方式
-    NSArray *filePaths = @[@"BrushScriptStd.ttf",@"Daniel.otf"];
-    NSMutableArray *paths = [NSMutableArray arrayWithCapacity:filePaths.count];
-    for (NSString *filePath in filePaths) {
-        NSString *fontFilePath = [[NSBundle mainBundle] pathForResource:filePath ofType:nil];
-        [paths addObject:fontFilePath];
-    }
-    if (paths) {
-        [CmallSDK registerFontWithFilePaths:[paths copy]];
-    }
-    
+
     return YES;
 }
 

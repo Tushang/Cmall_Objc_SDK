@@ -2,8 +2,8 @@
 //  CMViewController.h
 //  Cmall_iOS_SDK
 //
-//  Created by momo605654602@gmail.com on 04/10/2017.
-//  Copyright (c) 2017 momo605654602@gmail.com. All rights reserved.
+//  Created by moyun on 04/10/2017.
+//  Copyright (c) 2017 Cmall. All rights reserved.
 //
 
 @import UIKit;

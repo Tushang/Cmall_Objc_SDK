@@ -1,5 +1,5 @@
 PODS:
-  - Cmall_iOS_SDK (0.0.1)
+  - Cmall_iOS_SDK (3.0.0)
 
 DEPENDENCIES:
   - Cmall_iOS_SDK (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Cmall_iOS_SDK: 789aabffdbd59d43d3931e16565b5c8d56cef4f6
+  Cmall_iOS_SDK: 44769c688c1b8ed5ab5a29811d96f087933a1e80
 
 PODFILE CHECKSUM: 3bb035dad426783a02f6071a5df5e086e98f0d15
 

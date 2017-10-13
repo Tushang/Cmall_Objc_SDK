@@ -1,0 +1,6 @@
+framework module TaiduSDK {
+  umbrella header "TaiduSDK.h"
+
+  export *
+  module * { export * }
+}
